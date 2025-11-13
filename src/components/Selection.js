@@ -1,5 +1,6 @@
 
 import React, { useState } from 'react';
+import '../styles/Child.css'
 
 const Selection = ({ applyColor }) => {
   const [selectionStyle, updateSelectionStyle] = useState({ background: "" });
@@ -10,6 +11,7 @@ const Selection = ({ applyColor }) => {
       style={selectionStyle}
       onClick={() => applyColor(updateSelectionStyle)}
     >
+     <h1 >Selection</h1>
     </div>
   );
 };
